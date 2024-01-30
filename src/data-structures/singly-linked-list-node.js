@@ -1,5 +1,5 @@
 class Node {
-  constructor (val) {
+  constructor(val) {
     this.val = val;
     this.next = null;
   }
@@ -8,11 +8,5 @@ class Node {
     return this.val;
   }
 }
-
-/*
-class SinglyLinkedList {
-
-};
-*/
 
 export default Node;
