@@ -7,6 +7,18 @@ class Node {
   getVal() {
     return this.val;
   }
+
+  getNext() {
+    return this.next;
+  }
+
+  setVal(val) {
+    this.val = val;
+  }
+
+  setNext(next) {
+    this.val = next;
+  }
 }
 
 export default Node;
