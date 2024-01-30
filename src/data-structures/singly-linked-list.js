@@ -1,5 +1,8 @@
+// task list where new one gets added to the begining of the list
+// trip route
+// stacks - FIND YOUR WAY BACK
 class SinglyLinkedList {
-  costructor() {
+  constructor() {
     this.head = null;
     this.tail = null;
     this.length = 0;
