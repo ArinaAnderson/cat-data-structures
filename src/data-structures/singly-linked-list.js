@@ -1,18 +1,25 @@
-class Node {
-  constructor(val) {
-    this.val = val;
-    this.next = null;
+class SinglyLinkedList {
+  costructor() {
+    this.head = null;
+    this.tail = null;
+    this.length = 0;
   }
 
-  getVal() {
-    return this.val;
+  push(node) {
+    if (this.length === 0) {
+      this.head = node;
+      this.tail = node;
+      this.length += 1;
+
+      return this.length;
+    }
+
+    this.tail.next = node;
+    this.tail = node;
+    this.length += 1;
+
+    return this.length;
   }
 }
 
-/*
-class SinglyLinkedList {
-
-};
-*/
-
-export default Node;
+export default SinglyLinkedList;
