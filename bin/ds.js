@@ -3,8 +3,9 @@
 import { program } from 'commander';
 import genDiff from '../index.js';
 
+/*
 program
-  .name('gendiff')
+  .name('cat-ds')
   .argument('<filepath1>', 'path to file1')
   .argument('<filepath2>', 'path to file2')
   .description('Compares two configuration files and shows a difference.')
@@ -14,5 +15,4 @@ program
     const formatName = program.opts().format;
     console.log(genDiff(filepath1, filepath2, formatName));
   });
-
-program.parse();
+*/
