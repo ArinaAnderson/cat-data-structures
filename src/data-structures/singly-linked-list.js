@@ -33,7 +33,8 @@ class SinglyLinkedList {
       return this.length;
     }
 
-    this.tail.setNext(node);
+    // this.tail.setNext(node);
+    this.tail.next = node;
     this.tail = node;
     this.length += 1;
 
@@ -48,6 +49,7 @@ class SinglyLinkedList {
     const newTail = this.getNode(this.length - 2);
     const result = this.tail;
     this.tail = newTail;
+    this.tail.next = null;
     this.length -= 1;
 
     return result;
